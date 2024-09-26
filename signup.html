@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Productz</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images/Logo.png">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" type="text/css" href="css/signup.css">
+
+    <!-- Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Outfit:wght@100..900&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="logo">
+            <img src="images/Logo.png" alt="productz-logo" width="70px" height="70px">
+        </div>
+        <form method="post">
+            <h2>SIGN UP</h2>
+            <div class="fname">
+                <label>Full Name</label>
+                <input type="text" name="fname" value="" class="input" required><br>
+            </div>
+            <div class="email">
+                <label>Email</label>
+                <input type="email" name="email" value="" class="input" required><br>
+            </div>
+            <div class="pswd">
+                <label>Create Password</label>
+                <input type="password" name="password" value="" class="input" required>
+            </div>
+            <div class="user_type">
+                <label>User type:</label>
+                <input type="radio" name="user_type" class="radio" value="0" required><span>Seller</span>
+                <input type="radio" name="user_type" class="radio" value="1" required><span>Buyer</span><br>
+            </div>
+            <div class="Date">
+                <label>Current Date</label>
+                <input type="date" name="date" class="Current_date" value="" required><br>
+            </div>
+            <label>User Image:</label>
+            <input type="file" name="image" class="user_img" value="" required><br>
+            <input type="submit" name="submit" class="submit" value="Submit">
+            <p class="sign_in">I have an account, <a href="login.html">Login</a> here</p>
+        </form>
+    </main> 
+</body>
+</html>
